@@ -4,3 +4,12 @@
 *{
   box-sizing: border-box;
 }
+
+body {color: white;
+background-image: url("../images/background.jpg"); background-size: 980px;
+}
+
+
+.float {
+  float: left;
+}
