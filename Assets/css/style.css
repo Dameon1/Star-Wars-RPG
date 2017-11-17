@@ -6,10 +6,63 @@
 }
 
 body {color: white;
-background-image: url("../images/background.jpg"); background-size: 980px;
+background-image: url("../images/background.jpg");
+background-size: 980px;
 }
 
+h1 {
+  text-align: right;
+}
 
 .float {
   float: left;
+}
+
+button {
+  color:blue;
+}
+
+div.container {
+  text-align: center;
+}
+
+.mG {
+display:none;
+}
+.dVG {
+  display:none;
+}
+.oBWG {
+    display:none;
+}
+.yG {
+    display:none;
+}
+
+
+
+.mN {
+display:none;
+}
+.dVN {
+  display:none;
+}
+.oBWN {
+    display:none;
+}
+.yN {
+    display:none;
+}
+
+.mB {
+display:none;
+}
+.dVB {
+  display:none;
+}
+.oBWB {
+    display:none;
+}
+.yB {
+    display:none;
 }

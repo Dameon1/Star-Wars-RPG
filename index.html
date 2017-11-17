@@ -7,63 +7,186 @@
   <title>Document</title>
 
 
+
+
+
+<!-- Style reset link Meyerweb -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
 
+<!-- Bootstrap link-->
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+<!-- Link to jQUery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- CSS stylesheet -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
 
 
 </head>
-<body>
+  <body>
 
-<h1>
-  Star Wars RPG
-</h1>
+    <h1>
+      Star Wars RPG
+    </h1>
 
-<div class="container ">
-                        <div>
-                          <div class="rows float">
-                            <div class="col-sm-2">
-                             <img class="img-responsive" id="masterGood" src="assets/images/master.jpg" alt="fix"> wookie</image>
-                              <p >Hello</p>
-                            </div>
+<!-- First row of charachters -->
+      <div class="container ">
+        <div id="firstRow">
+          <div class="rows float">
+            <div class="col-md-3 a">
+              <p>
+               Darth Sidious
+              </p>
+              <img class="img-responsive mG"   src="assets/images/master.jpg" alt="fix">
+              <span id="masterHealth">
+                Health
+              </span>
+            </div>
+
+            <div class="col-md-3 b">
+              <p>
+                Darth Vader
+              </p>
+              <img class="img-responsive dVG" src="assets/images/dv.jpg" alt="fix">
+              <span id= "dVaderHealth">
+                Health
+              </span>
+            </div>
+
+            <div class="col-md-3 c">
+              <p>
+                Yoda
+              </p>
+              <img class="img-responsive yG" src="assets/images/yoda.jpg" alt="fix">
+              <span id= "yodaHealth" >
+                Health
+              </span>
+            </div>
+
+            <div class="col-md-3 d">
+              <p>
+                Obie Wan
+              </p>
+              <img class="img-responsive oBWG" src="assets/images/obe.jpg" alt="fix">
+              <span id="obieHealth">
+                Health
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <h3>Your character</h3>
+
+    <h3>Enemies Available to fight</h3>
 
 
+<!-- Middle row of charachters -->
+      <div class="container ">
+        <div id="secondRow">
+          <div class="rows float">
+            <div class="col-md-3 e">
+              <p>
+                Darth Sidious
+              </p>
+              <img class="img-responsive mN"   src="assets/images/master.jpg" alt="fix">
+              <p>
+                StaticHealth
+              </p>
+            </div>
 
-                            <div class="col-sm-2">
-                              <img class="img-responsive" src="assets/images/dv.jpg" alt="fix"> wookie</img>
-                              <p>Hello</p>
-                            </div>
+            <div class="col-md-3 f">
+              <p>
+                Darth Vader
+              </p>
+              <img class="img-responsive dVN" src="assets/images/dv.jpg" alt="fix">
+              <p>
+                StaticHealth
+              </p>
+            </div>
+
+            <div class="col-md-3 g">
+              <p>
+                Yoda
+              </p>
+              <img class="img-responsive yN" src="assets/images/yoda.jpg" alt="fix">
+              <p>
+                StaticHealth
+              </p>
+            </div>
+
+            <div class="col-md-3 h">
+              <p>
+                Obie Wan
+              </p>
+              <img class="img-responsive oBWN" src="assets/images/obe.jpg" alt="fix">
+              <p>
+                StaticHealth
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
+<!-- Button with "nothing attached to it" -->
+    <button type="button" value = "6">Attack</button>
 
-                            <div class="col-sm-2">
-                            <img class="img-responsive" src="assets/images/yoda.jpg" alt="fix"> wookie</img>
-                              <p>Hello</p>
-                            </div>
+    <h3>Defender</h3>
+
+<!-- Bottom row -->
+      <div class="container ">
+        <div id="thirdRow">
+          <div class="rows float">
+            <div class="col-md-3 i">
+              <p>
+                Darth Sidious
+              </p>
+              <img class="img-responsive mB"   src="assets/images/master.jpg" alt="fix">
+              <span id="masterHealthBad">
+                Health
+              </span>
+            </div>
+
+            <div class="col-md-3 j">
+              <p>
+                Darth Vader
+              </p>
+              <img class="img-responsive dVB" src="assets/images/dv.jpg" alt="fix">
+              <span id= "dVaderHealthBad">
+                Health
+              </span>
+            </div>
+
+            <div class="col-md-3 k">
+              <p>
+                Yoda
+              </p>
+              <img class="img-responsive yG" src="assets/images/yoda.jpg" alt="fix">
+              <span id= "yodaHealthB">
+                Health
+              </span>
+            </div>
+
+            <div class="col-md-3 l">
+              <p>
+                Obe Wan
+              </p>
+              <img class="img-responsive oBWG" src="assets/images/obe.jpg" alt="fix">
+              <span id="obieHealthBad">Health</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
+<!--linking jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-                            <div class="col-sm-2">
-                            <img class="img-responsive" src="assets/images/obe.jpg" alt="fix"> wookie</image>
-                              <p>Hello</p>
-                            </div>
+<!--link for javascriipt-->
+    <script  rel="stylesheet" type="text/javascript" src='assets/javascript/game.js'></script>
 
-                        </div>
-
-
-
-
-
-
-
-</div>
-
-
-<script  rel="stylesheet" type="text/javascript" src='assets/javascript/game.js'></script>
-</body>
+  </body>
 </html>
