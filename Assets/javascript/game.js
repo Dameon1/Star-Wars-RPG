@@ -1,10 +1,59 @@
 
 
-/* document ready... allows the page to load completely before linking anything to the html....very important */
+// document ready... allows the page to load completely before linking anything to the html
+/////////////////....very important
 
   $(document).ready(function() {
 
         console.log("working");
+
+
+// Creating a start function
+
+ function start() {
+  $(".a").show();
+  $(".b").show();
+  $(".c").show();
+  $(".d").show();
+  $(".pics").show();
+}
+
+// calling start function
+  start();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nothing below this line is knowingly being used at the moment all work from top down
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* this is for tageteting effects work thru $masterGood = $("#masterGood"); its a base for all for rows;

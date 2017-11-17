@@ -5,9 +5,10 @@
   box-sizing: border-box;
 }
 
-body {color: white;
-background-image: url("../images/background.jpg");
-background-size: 980px;
+body {
+      color: white;
+      background-image: url("../images/background.jpg");
+      background-size: 980px;
 }
 
 h1 {
@@ -26,34 +27,39 @@ div.container {
   text-align: center;
 }
 
+/* pic specific ids .. not sure if it was needed*/
+/* Top row*/
+
 .mG {
-display:none;
+  display:none;
 }
 .dVG {
   display:none;
 }
 .oBWG {
-    display:none;
+  display:none;
 }
 .yG {
-    display:none;
+  display:none;
 }
 
 
+/* Middle Row*/
 
 .mN {
-display:none;
+  display:none;
 }
 .dVN {
   display:none;
 }
 .oBWN {
-    display:none;
+  display:none;
 }
 .yN {
-    display:none;
+  display:none;
 }
 
+/*Bottom row*/
 .mB {
 display:none;
 }
@@ -65,4 +71,61 @@ display:none;
 }
 .yB {
     display:none;
+}
+
+
+
+/*
+    a list of elements in alphabetic order
+      abcd-row1
+      efgh-row2
+      ijkl-row3
+*/
+
+
+
+/* top row */
+
+.a {
+  display:none;
+}
+
+.b {
+  display:none;
+}
+
+.c {
+  display:none;
+}
+
+.d {
+  display:none;
+}
+
+
+/* middle row*/
+.e {
+  display:none;
+}
+.f {
+  display:none;
+}
+.g {
+  display:none;
+}
+.h {
+  display:none;
+}
+
+.i {
+  display:none;
+}
+.j {
+  display:none;
+}
+.k {
+  display:none;
+}
+.l {
+  display:none;
 }
