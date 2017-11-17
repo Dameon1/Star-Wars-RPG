@@ -15,19 +15,86 @@
   $(".b").show();
   $(".c").show();
   $(".d").show();
-  $(".pics").show();
+
 }
 
 // calling start function
   start();
 
+/* Layout for showing and hiding other elements in the document
+    ~after a player picks a charachter
 
 
 
+    $(".idk")on("click", () {
+    $(".").hide();
+    $(".").hide();
+    $(".").hide();
+    $(".").show();
+    $(".").show();
+    $(".").show();
+  });
+*/
+
+//  this is if a player pics "a"
+
+ // let $a = $("#a")
+/*
+      $("#a")on("click", () {
+      $(".b").hide();
+      $(".c").hide();
+      $(".d").hide();
+      $(".g").show();
+      $(".h").show();
+      $(".j").show();
+    });
+/*  object model runthrough from css
 
 
+  .mG {
+    display:none;
+  }
+  .dVG {
+    display:none;
+  }
+  .oBWG {
+    display:none;
+  }
+  .yG {
+    display:none;
+  }
 
 
+  /* Middle Row
+
+  .mN {
+    display:none;
+  }
+  .dVN {
+    display:none;
+  }
+  .oBWN {
+    display:none;
+  }
+  .yN {
+    display:none;
+  }
+
+  /*Bottom row
+  .mB {
+  display:none;
+  }
+  .dVB {
+    display:none;
+  }
+  .oBWB {
+      display:none;
+  }
+  .yB {
+      display:none;
+  }
+
+*/
 
 
 
