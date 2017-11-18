@@ -8,6 +8,29 @@
         console.log("working");
 
 
+
+let mGH = 10;
+$("#mGH").text(mGH);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Creating a start function
 
  function start() {
@@ -21,23 +44,168 @@
 // calling start function
   start();
 
-/* Layout for showing and hiding other elements in the document
-    ~after a player picks a charachter
 
 
 
-    $(".idk")on("click", () {
-    $(".").hide();
-    $(".").hide();
-    $(".").hide();
-    $(".").show();
-    $(".").show();
-    $(".").show();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*random code reference
+  $(".a").on("click", function() {
+    $(".b").hide();
+    $(".c").hide();
+    $(".d").hide();
+    $(".g").show();
+    $(".h").show();
+    $(".j").show();
   });
+
+
+
+
+
+
+
+/* Layout for showing and hiding other elements in the document
+    ~after a player picks "a" charachter
+
+
 */
+// four choice selectors
 
-//  this is if a player pics "a"
 
+$(".a").on("click", function() {
+  $(".b").hide();
+  $(".c").hide();
+  $(".d").hide();
+  $(".f").show();
+  $(".g").show();
+  $(".h").show();
+  $(".a").off();
+});
+
+$(".b").on("click", function() {
+  $(".a").hide();
+  $(".c").hide();
+  $(".d").hide();
+  $(".e").show();
+  $(".g").show();
+  $(".h").show();
+  $(".b").off();
+});
+
+$(".c").on("click", function() {
+  $(".a").hide();
+  $(".b").hide();
+  $(".d").hide();
+  $(".e").show();
+  $(".f").show();
+  $(".h").show();
+  $(".c").off();
+});
+
+
+$(".d").on("click", function() {
+  $(".a").hide();
+  $(".b").hide();
+  $(".c").hide();
+  $(".e").show();
+  $(".f").show();
+  $(".g").show();
+  $(".d").off();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  if pick "f"
+$(".f").on("click", function() {
+  $(".f").hide();
+  $(".j").show();
+  $("div.g").removeClass(".g");
+  $("div.h").removeClass(".h");
+});
+
+
+$(".g").on("click", function() {
+  $(".g").hide();
+  $(".k").show();
+  $(".f").removeClass(".f");
+  $(".h").removeClass(".h")
+});
+
+
+
+$(".h").on("click", function() {
+  $(".h").hide();
+  $(".l").show();
+  $(".").on("click", function(){
+    $(".l").hide();
+    $(".")
+  })
+  $(".f").off("click");
+  $(".g").off();
+});
+
+
+
+
+
+
+// if pick f to fight
+//after death of first character. it will get this.. but putting an .on for func.
+
+$(".j").on("click", function() {
+  $(".j").hide();
+  $(".g").addClass(".g");
+  $(".h").addClass(".h");
+});
+
+$(".g").on("click", function() {
+  $(".g").hide();
+  $(".f").addClass(".f")
+  $(".h").addClass(".h");
+});
+
+$(".h").on("click", function() {
+  $(".h").hide();
+  $(".f").addClass(".f");
+  $(".g").addClass(".g")
+});
  // let $a = $("#a")
 /*
       $("#a")on("click", () {
@@ -47,11 +215,12 @@
       $(".g").show();
       $(".h").show();
       $(".j").show();
-    });
+    });*/
+
 /*  object model runthrough from css
 
 
-  .mG {
+  $(".mG") {
     display:none;
   }
   .dVG {
