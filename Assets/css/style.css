@@ -6,7 +6,7 @@
 body {
   color: lightBlue;
   background-image: url("../images/background.jpg");
-  background-size:1600px;
+  background-size:1200px;
 }
 
 h1 {
@@ -22,20 +22,25 @@ button {
 }
 
 div.container {
-  text-align: center;  margin: 0; padding:0;
+  text-align: center;  margin: 0px; padding:0px;
 }
 
 .pics {
-  height: 175px;
-  width: auto;
+  height: 150px;
+  width:150px;
 
   padding:5px;
 
 }
 
-
-.row2 {
+firstRow: {
+  background-color: white;
+}
+secondRow: {
   background-color: red;
+}
+thirdRow: {
+  background-color: black;
 }
 
 
@@ -50,14 +55,14 @@ div.container {
 .dVG, .dVN, .dVB,
 .oBWG, .oBWN, .oBWB,
 .mG, .mN, .mB {
-  width: auto; margin: 5px; padding:5px;
+  width: auto; margin: 5px; padding:5px; border: 2px; border-style: solid;
 }
 
 .yG,
 .dVG,
 .oBWG,
 .mG {
-  background-color: white;
+  background-color: white; border-color: orange;
 }
 
 .yN, .dVN, .oBWN, .mN {
@@ -69,112 +74,69 @@ div.container {
 }
 
 
-
-
-
-
-
-
-
-
-/*
-
-  .mG {
-  display:none;
-}
-.dVG {
-  display:none;
-}
-.oBWG {
-  display:none;
-}
-.yG {
-  display:none;
-}
-
-
-/* Middle Row
-
-.mN {
-  display:none;
-}
-.dVN {
-  display:none;
-}
-.oBWN {
-  display:none;
-}
-.yN {
-  display:none;
-}
-
-/*Bottom row
-.mB {
-display:none;
-}
-.dVB {
-  display:none;
-}
-.oBWB {
-    display:none;
-}
-.yB {
-    display:none;
-}
-
-
-
-/*
-    a list of elements in alphabetic order for targeting
-      abcd-row1
-      efgh-row2
-      ijkl-row3
-*/
-
-
-
 /* top row */
-
-.a {
-  display:none;
-}
-
-.b {
-  display:none;
-}
-
-.c {
-  display:none;
-}
-
-.d {
-  display:none;
+.a, .b, .c, .d {
+    display:none;
 }
 
 
 /* middle row*/
-.e {
-  display:none;
-}
-.f {
-  display:none;
-}
-.g {
-  display:none;
-}
-.h {
+.e, .f, .g, .h {
   display:none;
 }
 
-.i {
+/*last row*/
+.i, .j, .k, .l {
   display:none;
 }
-.j {
-  display:none;
+
+/*Event handlers classes by first letter
+ to be removed and added during the game   ex. "xh" */
+
+.ah {
+
 }
-.k {
-  display:none;
+
+.bh {
+
 }
-.l {
-  display:none;
+
+.ch {
+
+}
+
+.dh {
+
+}
+
+.eh {
+
+}
+
+.fh {
+
+}
+
+.gh {
+
+}
+
+.hh {
+
+}
+
+.ih {
+
+}
+
+.jh {
+
+}
+
+.kh {
+
+}
+
+.lh {
+
 }

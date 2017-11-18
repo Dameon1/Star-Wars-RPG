@@ -5,287 +5,220 @@
 
   $(document).ready(function() {
 
-        console.log("working");
-
-
-
-let mGH = 10;
-$("#mGH").text(mGH);
+    console.log("working");
 
 
 
 
+    /* Basic object values that are "potentially" ID accurate*/
 
 
+    var $a = $("#a");
+
+    var mG = {
+      name:"a",
+      atackPoints: 10,
+      defensePoints:10,
+    };
+
+    var dVG = {
+      name:"b",
+      atackPoints: 10,
+      defensePoints:10,
+    };
+
+    var oBWG = {
+      name:"c",
+      atackPoints: 10,
+      defensePoints:10,
+    };
+
+    var yG = {
+       name:"d",
+      atackPoints: 10,
+      defensePoints:10,
+    };
 
 
+    // variables to hold arrays, potenetially display items
+    var goodCharacters = [[mG],[dVG],[oBWG],[yG]];
+    var badCharacters = [];
+    var currentDefender = [];
 
+    //check to see if arrays are working
+    console.log(goodCharacters);
+    var  goodObject = goodCharacters[0] ;
+    console.log(goodCharacters);
+    console.log(goodObject);
 
+    // tried to build a constuctor that takes objects to populate and recall but failed to did this
 
+    // Creating a start function needs an
 
-
-
-
-
-
-
-
-
-// Creating a start function
-
- function start() {
-  $(".a").show();
-  $(".b").show();
-  $(".c").show();
-  $(".d").show();
-
+    function start() {
+      $(".a").show();
+      $(".b").show();
+      $(".c").show();
+      $(".d").show();
 }
 
-// calling start function
-  start();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*random code reference
-  $(".a").on("click", function() {
-    $(".b").hide();
-    $(".c").hide();
-    $(".d").hide();
-    $(".g").show();
-    $(".h").show();
-    $(".j").show();
-  });
-
-
-
-
-
-
-
-/* Layout for showing and hiding other elements in the document
+// calling start function...onkey event(maybe)
+    start();
+/*
+ Layout for showing and hiding other elements in the document
     ~after a player picks "a" charachter
-
-
 */
-// four choice selectors
 
+// four attacker selectors
 
-$(".a").on("click", function() {
+//if user picks "a"
+$(".ah").on("click", function() {
   $(".b").hide();
   $(".c").hide();
   $(".d").hide();
   $(".f").show();
   $(".g").show();
   $(".h").show();
-  $(".a").off();
+  $(".ah").off();
 });
 
-$(".b").on("click", function() {
+//if user picks "b"
+$(".bh").on("click", function() {
   $(".a").hide();
   $(".c").hide();
   $(".d").hide();
   $(".e").show();
   $(".g").show();
   $(".h").show();
-  $(".b").off();
+  $(".bh").off();
 });
 
-$(".c").on("click", function() {
+//if user picks "c"
+$(".ch").on("click", function() {
   $(".a").hide();
   $(".b").hide();
   $(".d").hide();
   $(".e").show();
   $(".f").show();
   $(".h").show();
-  $(".c").off();
+  $(".ch").off();
 });
 
-
-$(".d").on("click", function() {
+//if user picks "d"
+$(".dh").on("click", function() {
   $(".a").hide();
   $(".b").hide();
   $(".c").hide();
   $(".e").show();
   $(".f").show();
   $(".g").show();
-  $(".d").off();
+  $(".dh").off();
 });
 
 
+// four defender selectors
 
+//if picks "e"
+$(".eh").on("click", function() {
+  $(".e").hide();
+  $(".i").show();
+      $("#f").removeClass("fh");
+      $("#g").removeClass("gh");
+      $("#h").removeClass("hh");
+});
 
-
-
-
-
-
-
-
-
-
-
-
-//  if pick "f"
+//if picks "f"
 $(".f").on("click", function() {
   $(".f").hide();
   $(".j").show();
-  $("div.g").removeClass(".g");
-  $("div.h").removeClass(".h");
+      $("div.mN").removeClass(".e");
+      $("div.yN").removeClass(".g");
+      $("div.oBWN").removeClass(".h");
 });
 
-
+//if picks "g"
 $(".g").on("click", function() {
   $(".g").hide();
   $(".k").show();
-  $(".f").removeClass(".f");
-  $(".h").removeClass(".h")
+      $("div.mN").removeClass(".e")
+      $("div.dVN").removeClass(".f");
+      $("div.oBWN").removeClass(".h");
 });
 
-
-
+//if picks "h"
 $(".h").on("click", function() {
   $(".h").hide();
   $(".l").show();
-  $(".").on("click", function(){
-    $(".l").hide();
-    $(".")
-  })
-  $(".f").off("click");
-  $(".g").off();
+      $("div.mN").removeClass(".e")
+      $("div.dVN").removeClass(".f");
+      $("div.yN").removeClass(".g");
+});
+
+//if picks "i"
+$(".ih").on("click", function() {
+  $(".i").hide();
+  $("#f").addClass("fh");
+  $("#g").addClass("gh");
+  $("#h").addClass("hh");
 });
 
 
 
 
+/*after death of first character. it will get this..code block
+ but putting an ".on"click for functionality*/
 
 
-// if pick f to fight
-//after death of first character. it will get this.. but putting an .on for func.
 
+ //if picks "i"
+ $(".ih").on("click", function() {
+   $(".i").hide();
+   $("#f").addClass("fh");
+   $("#g").addClass("gh");
+   $("#h").addClass("hh");
+ });
+
+//if picks "j"
 $(".j").on("click", function() {
   $(".j").hide();
-  $(".g").addClass(".g");
-  $(".h").addClass(".h");
+  $("div.yN").addClass(".g");
+  $("div.oBWN").addClass(".h");
 });
 
+//if picks "k"
+$(".kh").on("click", function() {
+  $(".k").hide();
+  $("#e").addClass("eh");
+  $("#f").addClass("fh");
+  $("#h").addClass("hh");
+  console.log(this);
+});
+
+$(".l").on("click", function() {
+  $(".l").hide();
+  $(".f").addClass(".f");
+  $(".g").addClass(".g");
+});
+/*
+//these were some things that I tried at various times
+$(".f").on("click", function() {
+  $(".f").hide();
+  $(".j").show();
+      $("div.mN").removeClass(".e");
+      $("div.yN").addClass(".g");
+      $("div.oBWN").append$(".h");
+});
+
+//if pick "g"
 $(".g").on("click", function() {
   $(".g").hide();
-  $(".f").addClass(".f")
-  $(".h").addClass(".h");
+  $(".k").show();
+      $("#f").off(".e")
+      $("div.dVN").addClass(".f");
+      $("div.oBWN").removeClass(".h");
 });
-
-$(".h").on("click", function() {
-  $(".h").hide();
-  $(".f").addClass(".f");
-  $(".g").addClass(".g")
-});
- // let $a = $("#a")
-/*
-      $("#a")on("click", () {
-      $(".b").hide();
-      $(".c").hide();
-      $(".d").hide();
-      $(".g").show();
-      $(".h").show();
-      $(".j").show();
-    });*/
-
-/*  object model runthrough from css
-
-
-  $(".mG") {
-    display:none;
-  }
-  .dVG {
-    display:none;
-  }
-  .oBWG {
-    display:none;
-  }
-  .yG {
-    display:none;
-  }
-
-
-  /* Middle Row
-
-  .mN {
-    display:none;
-  }
-  .dVN {
-    display:none;
-  }
-  .oBWN {
-    display:none;
-  }
-  .yN {
-    display:none;
-  }
-
-  /*Bottom row
-  .mB {
-  display:none;
-  }
-  .dVB {
-    display:none;
-  }
-  .oBWB {
-      display:none;
-  }
-  .yB {
-      display:none;
-  }
-
-*/
-
-
-
-
-
-
-
-
 
 /* nothing below this line is knowingly being used at the moment all work from top down
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -296,43 +229,33 @@ $(".h").on("click", function() {
     there are very little effects attached to the html
 
 let $masterGood = $("#masterGood")
-let $masterGood = $("#masterGood")
-let $masterGood = $("#masterGood")
-let $masterGood = $("#masterGood")
-
 let $masterNeutral = $("#masterNeutral");
-let $masterNeutral = $("#masterNeutral")
-let $masterNeutral = $("#masterNeutral")
-let $masterNeutral = $("#masterNeutral")
-
-let $masterEvil= $("#masterEvil);
 let $masterEvil= $("#masterEvil)
-let $masterEvil= $("#masterEvil)
-let $masterEvil= $("#masterEvil)
-
-*/
 
 /* Basic object values that are "potentially" ID accurate*/
 
-let mG = {
+
+var $a = $("#a");
+
+var mG = {
   name:"a",
   atackPoints: 10,
   defensePoints:10,
 };
 
-let dVG = {
+var dVG = {
   name:"b",
   atackPoints: 10,
   defensePoints:10,
 };
 
-let oBWG = {
+var oBWG = {
   name:"c",
   atackPoints: 10,
   defensePoints:10,
 };
 
-let yG = {
+var yG = {
    name:"d",
   atackPoints: 10,
   defensePoints:10,
@@ -346,47 +269,18 @@ function toString() {
 };  */
 
 
-// variables to hold arrays, potenetial display items
-    let goodCharacters = [[mG],[dVG],[oBWG],[yG]];
-    let badCharacters = [];
-    let currentDefender = [];
+// variables to hold arrays, potenetially display items
+    var goodCharacters = [[mG],[dVG],[oBWG],[yG]];
+    var badCharacters = [];
+    var currentDefender = [];
 
-//check to see if its working
-console.log(goodCharacters);
-let  goodObject = goodCharacters[0] ;
-console.log(goodCharacters);
-console.log(goodObject);
+//check to see if arrays are working
+    console.log(goodCharacters);
+    var  goodObject = goodCharacters[0] ;
+    console.log(goodCharacters);
+    console.log(goodObject);
 
-/* trying to build a constuctor that takes objects to populate and recall , unsure if needed, just a refereng
- let newObject = new Object();       or maybe a name instead that has all this
-
-let a = 10;
-let b = 5;
-  goodgoodCharacters.name =  "hello";
-  goodgoodCharacters.attack = b;
-  goodgoodCharacters.defend =  a;
-  goodgoodCharacters.pic = b;
-
-*/
-
-/*
-{functions} by (ID) reference model, it's mixed on purpose to show passing capabilities
-
-$("#masterGood").on("click", function() {
-  $("#masterGood").show({ height: "300px" });
-});
-
-$("#masterGood").on("click", function() {
-  $("#goodCharacters").empty();
-  $("#goodCharacters[0]").toString();
-  console.log(goodCharacters);
-  toString();
-});
-
-
-this is making an object that is connected to an (ID) model
-let $masterGood = $("#masterGood")
-
-*/
+/* trying to build a constuctor that takes objects to populate and recall
+would have been alot easier with constructors, unsure if needed, just a refereng*/
 
 });
