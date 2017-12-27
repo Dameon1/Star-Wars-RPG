@@ -4,139 +4,117 @@
 }
 
 body {
-  color: lightBlue;
+  font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
   background-image: url("../images/background.jpg");
-  background-size:1200px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1400px;
+  color: lightblue;
 }
 
-h1 {
-  text-align: right;
+img {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
 }
 
-.float {
-  float: left;
+.section-title {
+  font-size: 200%;
 }
 
-button {
-  color:blue;
+.main-section-title {
+  font-size: 300%;
+  text-align: center;
 }
 
-div.container {
-  text-align: center;  margin: 0px; padding:0px;
-}
-
-.pics {
-  height: 150px;
-  width:150px;
-
-  padding:5px;
-
-}
-
-firstRow: {
+.character {
+  display: inline-block;
+  cursor: pointer;
   background-color: white;
+  border-color: green;
+  border-style: solid;
+  border-width: 3px;
 }
-secondRow: {
+
+.character-image {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.character-name {
+  text-align: center;
+}
+
+.character-health {
+  text-align: center;
+}
+
+#available-to-attack-section .character {
+  display: inline-block;
+  cursor: pointer;
   background-color: red;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
 }
-thirdRow: {
+
+.enemy {
+  display: inline-block;
+  cursor: pointer;
+  background-color: red;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#action .character {
+  color: white;
   background-color: black;
 }
 
-
-
-/* pic specific ids .. not sure if it was needed ,.. more for javscript [ID's]
-  Top row
-  These items removed...classes should be changed to [ID's] in html for
-  targeting in javaScript
-*/
-
-.yG, .yN, .yB,
-.dVG, .dVN, .dVB,
-.oBWG, .oBWN, .oBWB,
-.mG, .mN, .mB {
-  width: auto; margin: 5px; padding:5px; border: 2px; border-style: solid;
-}
-
-.yG,
-.dVG,
-.oBWG,
-.mG {
-  background-color: white; border-color: orange;
-}
-
-.yN, .dVN, .oBWN, .mN {
-  background-color: red;
-}
-.yB, .dVB,
-.oBWB,.mB {
+.target-enemy {
+  color: white;
   background-color: black;
 }
 
-
-/* top row */
-.a, .b, .c, .d {
-    display:none;
+#selected-character {
+  width: 190px;
+  height: 160px;
 }
 
-
-/* middle row*/
-.e, .f, .g, .h {
-  display:none;
+#attacker {
+  width: 190px;
+  height: 160px;
 }
 
-/*last row*/
-.i, .j, .k, .l {
-  display:none;
+#defender {
+  width: 190px;
+  height: 160px;
 }
 
-/*Event handlers classes by first letter
- to be removed and added during the game   ex. "xh" */
-
-.ah {
-
+#defender-name {
+  text-align: center;
 }
 
-.bh {
-
+#defender-health {
+  text-align: center;
 }
 
-.ch {
-
+#choose-enemy-button {
+  visibility: hidden;
 }
 
-.dh {
-
+#restart-button {
+  visibility: hidden;
 }
 
-.eh {
-
+#turn-counter {
+  font-size: 150%;
 }
 
-.fh {
-
-}
-
-.gh {
-
-}
-
-.hh {
-
-}
-
-.ih {
-
-}
-
-.jh {
-
-}
-
-.kh {
-
-}
-
-.lh {
-
+#turn-counter {
+  font-size: 200%;
 }

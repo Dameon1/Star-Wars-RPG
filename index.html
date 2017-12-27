@@ -7,11 +7,11 @@
   <title>Document</title>
 
 <!-- Style reset link Meyerweb -->
-  <link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+  <link rel="stylesheet" type ="text/css" href="Assets/css/reset.css">
 <!-- Bootstrap link-->
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+  <link rel='stylesheet' href ='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
 <!-- CSS stylesheet -->
-  <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+  <link rel="stylesheet" type ="text/css" href="Assets/css/style.css">
 
 
 
@@ -19,166 +19,45 @@
 </head>
   <body>
 
-    <h1>
-      Star Wars RPG
-    </h1>
+    		<div class="main-section-title">Star Wars RPG!</div>
+    		<div id="main-game-section">
+    			<!-- Where the characters are initially available to be selected. -->
+    			<div id="characters-section">
+    				<div class="section-title">Select Your Character</div>
+    			</div>
 
-<!-- First row of charachters -->
-      <div class="container">
-        <div id="firstRow">
-          <div class="rows float">
+    			<!-- Section for our selected character. -->
+    			<div id="selected-character-section">
+    				<div class="section-title">Your Character</div>
+    				<!-- Where our selected character will appear. -->
+    				<div id="selected-character"></div>
+    			</div>
 
-            <div class="col-md-3 a mG ah"  id= "a">
-              <b>
-                Darth Sidious
-              <img class="img-responsive pics"  src="Assets/images/master.jpg" alt="fix">
-                Health:
-              <span id="mGH">
-                  10
-              </span>
-              </b>
-            </div>
+    			<!-- Where our enemies available to attack will appear. -->
+    			<div id="available-to-attack-section">
+    				<div class="section-title">Enemies Available To Attack</div>
+    			</div>
 
-            <div class="col-md-3 b dVG bh" id="b">
-              <b>
-                Darth Vader
-              <img class="img-responsive pics" src="Assets/images/dv.jpg" alt="fix">
-                Health:
-              <span id= "dVGH">
-                15
-              </span>
-              </b>
-            </div>
+    			<div class="section-title">Fight Section</div>
+    			<div id="fight-section">
+    				<button id="attack-button">Attack</button>
+    			</div>
 
-            <div class="col-md-3 c yG ch" id="c">
-              <b>
-                Yoda
-              <img class="img-responsive pics " src="Assets/images/yoda.jpg" alt="fix">
-                Health:
-              <span id= "yGH" >
-                20
-              </span></b>
-            </div>
+    			<div id="action">
+    				<div class="character-section">
+    					<div class="section-title">Defender</div>
+    					<!-- Where our defender will appear. -->
+    					<div id="defender">
+    					</div>
+    				</div>
+    			</div>
 
-            <div class="col-md-3 d oBWG dh" id="d">
-              <b>
-                Obie Wan
-              <img class="img-responsive pics" src="Assets/images/obe.jpg" alt="fix">
-                Health:
-              <span id="oBWGH">
-                Health
-              </span>
-              </b>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    <h3>Your character</h3>
-
-    <h3>Enemies Available to fight</h3>
+    		</div>
+    		<!-- Area for game messages. -->
+    		<div id="game-message"></div>
 
 
-<!-- Middle row of charachters -->
-      <div class="container">
-        <div id="secondRow">
-          <div class="rows float">
 
-            <div class="col-md-3 e mN eh" id="e">
-              <b>
-                Darth Sidious
-              <img class="img-responsive pics"   src="Assets/images/master.jpg" alt="fix">
-                10
-              </b>
-            </div>
-
-            <div class="col-md-3 f dVN fh" id="f">
-              <b>
-                Darth Vader
-              <img class="img-responsive pics" src="Assets/images/dv.jpg" alt="fix">
-                15
-              </b>
-            </div>
-
-            <div class="col-md-3 g yN gh" id="g">
-              <b>
-                Yoda
-              <img class="img-responsive pics" src="Assets/images/yoda.jpg" alt="fix">
-                20
-              </b>
-            </div>
-
-            <div class="col-md-3 h oBWN hh" id="h" >
-              <b>
-                Obie Wan
-              <img class="img-responsive pics" src="Assets/images/obe.jpg" alt="fix">
-                25
-              </b>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-<!-- Button with "nothing attached to it" -->
-    <button type="button" value = "6">Attack</button>
-
-    <h3>Defender</h3>
-
-<!-- Bottom row -->
-      <div class="container ">
-        <div id="thirdRow">
-          <div class="rows float">
-
-            <div class="col-md-3 i mB ih" id="i">
-              <b>
-                Darth Sidious
-              <img class="img-responsive pics"   src="Assets/images/master.jpg" alt="fix">
-                Health:
-                <span id="masterHealthBad">
-                  10
-                </span>
-              </b>
-            </div>
-
-            <div class="col-md-3 j dVB jh" id="j">
-              <b>
-                Darth Vader
-              <img class="img-responsive pics" src="Assets/images/dv.jpg" alt="fix">
-                Health:
-              <span id= "dVaderHealthBad">
-                15
-              </span>
-              </b>
-            </div>
-
-            <div class="col-md-3 k yB kh" id="k">
-              <b>
-                Yoda
-              <img class="img-responsive pics" src="Assets/images/yoda.jpg" alt="fix">
-                Health:
-              <span id= "yodaHealthBad">
-                20
-              </span>
-              </b>
-            </div>
-
-            <div class="col-md-3 l oBWB lh" id="l">
-              <b>
-                Obie Wan
-              <img class="img-responsive  pics" src="Assets/images/obe.jpg" alt="fix">
-                Health:
-                <span id="obieHealthBad">
-                  25
-                </span>
-              </b>
-            </div>
-
-          </div>
-        </div>
-      </div>
 
 
 <!--linking jquery -->
