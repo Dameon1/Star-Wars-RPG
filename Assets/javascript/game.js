@@ -17,28 +17,28 @@
     name: "Obi-Wan Kenobi",
     health: 120,
     attack: 8,
-    imageUrl: "assets/images/obe.jpg",
+    imageUrl: "Assets/images/obe.jpg",
     enemyAttackBack: 15
     },
     "Yoda": {
     name: "Yoda",
     health: 100,
     attack: 14,
-    imageUrl: "assets/images/yoda.jpg",
+    imageUrl: "Assets/images/yoda.jpg",
     enemyAttackBack: 5
     },
     "Darth Vader": {
     name: "Darth Vader",
     health: 150,
     attack: 8,
-    imageUrl: "assets/images/dv.jpg",
+    imageUrl: "Assets/images/dv.jpg",
     enemyAttackBack: 20
     },
     "Darth Sidious": {
     name: "Darth Sidious",
     health: 180,
     attack: 7,
-    imageUrl: "assets/images/master.jpg",
+    imageUrl: "Assets/images/master.jpg",
     enemyAttackBack: 25
     }
   };
