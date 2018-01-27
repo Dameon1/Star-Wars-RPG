@@ -12,6 +12,7 @@
 
     /* Basic object values that are "potentially" ID accurate*/
 
+
     var characters = {
     "Obi-Wan Kenobi": {
     name: "Obi-Wan Kenobi",
@@ -127,7 +128,7 @@ var gameMessage = $("#game-message");
 gameMessage.text("");
 };
 
-// ===================================================================
+
 
 // On click event for selecting our character.
 $("#characters-section").on("click", ".character", function() {
@@ -233,4 +234,5 @@ clearMessage();
 renderMessage("No enemy here.");
 }
 });
+
 });
